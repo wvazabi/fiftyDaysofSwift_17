@@ -16,24 +16,42 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fcV-7G-a6G">
-                                <rect key="frame" x="87" y="273" width="240" height="128"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fcV-7G-a6G">
+                                <rect key="frame" x="16" y="60" width="382" height="333"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="200" verticalCompressionResistancePriority="200" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iGr-vJ-30R">
+                                        <rect key="frame" x="16" y="16" width="350" height="142.5"/>
+                                        <string key="text">Label Label Label Label Label Label Label Label Label Label Label Label Label Label Label Label Label Label Label Label Label Label Label Label Label Label Label Label Label Label Label Label Label Label Label Label Label Label Label Label Label Label Label Label Label Label Label</string>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sgw-7b-2Xp">
+                                        <rect key="frame" x="16" y="174.5" width="350" height="142.5"/>
+                                        <string key="text">Label Label Label Label Label Label Label Label Label Label Label Label Label Label Label Label Label Label Label Label Label Label Label Label Label Label Label Label Label Label Label Label Label Label Label Label Label Label Label Label Label Label Label Label Label Label Label</string>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
                                 <color key="backgroundColor" systemColor="systemMintColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="iGr-vJ-30R" secondAttribute="trailing" constant="16" id="0X2-l7-NHL"/>
+                                    <constraint firstAttribute="bottom" secondItem="sgw-7b-2Xp" secondAttribute="bottom" constant="16" id="CNA-6r-5Gj"/>
+                                    <constraint firstItem="iGr-vJ-30R" firstAttribute="leading" secondItem="fcV-7G-a6G" secondAttribute="leading" constant="16" id="GwM-82-BJa"/>
+                                    <constraint firstItem="sgw-7b-2Xp" firstAttribute="top" secondItem="iGr-vJ-30R" secondAttribute="bottom" constant="16" id="H7M-oP-fKf"/>
+                                    <constraint firstItem="sgw-7b-2Xp" firstAttribute="leading" secondItem="fcV-7G-a6G" secondAttribute="leading" constant="16" id="bbr-DS-lvK"/>
+                                    <constraint firstAttribute="trailing" secondItem="sgw-7b-2Xp" secondAttribute="trailing" constant="16" id="n1m-sZ-lqE"/>
+                                    <constraint firstItem="iGr-vJ-30R" firstAttribute="top" secondItem="fcV-7G-a6G" secondAttribute="top" constant="16" id="zxe-lz-rsi"/>
+                                </constraints>
                             </view>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iGr-vJ-30R">
-                                <rect key="frame" x="16" y="677" width="382" height="142.5"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <string key="text">LabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabel LabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabel</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="fcV-7G-a6G" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="16" id="O4O-PZ-fcM"/>
-                            <constraint firstItem="fcV-7G-a6G" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="W1I-j4-P8J"/>
+                            <constraint firstItem="fcV-7G-a6G" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="1X1-sq-9C9"/>
+                            <constraint firstAttribute="trailing" secondItem="fcV-7G-a6G" secondAttribute="trailing" constant="16" id="MYl-Z3-mDK"/>
+                            <constraint firstItem="fcV-7G-a6G" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="16" id="hny-NV-1CE"/>
                         </constraints>
                     </view>
                 </viewController>
