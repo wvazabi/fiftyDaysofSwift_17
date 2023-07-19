@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="330" id="KGk-i7-Jjw" customClass="CustomCell" customModule="fiftyDaysof_Swift_17" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="331" height="330"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="331" height="330"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bzx-SK-9lf">
+                        <rect key="frame" x="16" y="16" width="299" height="298"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="1000" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t6H-so-6x4">
+                                <rect key="frame" x="8" y="8" width="283" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Meu-0k-sGT">
+                                <rect key="frame" x="8" y="37" width="283" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="Meu-0k-sGT" secondAttribute="trailing" constant="8" id="3PU-fr-K2U"/>
+                            <constraint firstItem="Meu-0k-sGT" firstAttribute="top" secondItem="t6H-so-6x4" secondAttribute="bottom" constant="8" id="DFs-pI-4Ap"/>
+                            <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="Meu-0k-sGT" secondAttribute="bottom" constant="8" id="ItN-E3-Asv"/>
+                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="100" id="RCf-XW-Jbm"/>
+                            <constraint firstAttribute="trailing" secondItem="t6H-so-6x4" secondAttribute="trailing" constant="8" id="Rth-wi-JhD"/>
+                            <constraint firstItem="t6H-so-6x4" firstAttribute="leading" secondItem="bzx-SK-9lf" secondAttribute="leading" constant="8" id="atW-2J-Bg6"/>
+                            <constraint firstItem="Meu-0k-sGT" firstAttribute="leading" secondItem="bzx-SK-9lf" secondAttribute="leading" constant="8" id="fQ7-p6-RTj"/>
+                            <constraint firstItem="t6H-so-6x4" firstAttribute="top" secondItem="bzx-SK-9lf" secondAttribute="top" constant="8" id="sHU-vA-une"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="bzx-SK-9lf" secondAttribute="bottom" constant="16" id="9HZ-pH-60W"/>
+                    <constraint firstItem="bzx-SK-9lf" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="EA4-Sk-cs3"/>
+                    <constraint firstItem="bzx-SK-9lf" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="16" id="Kma-Zs-lfI"/>
+                    <constraint firstAttribute="trailing" secondItem="bzx-SK-9lf" secondAttribute="trailing" constant="16" id="XO4-Dt-vcT"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="containerView" destination="bzx-SK-9lf" id="ic7-LO-5Fc"/>
+                <outlet property="personAgeLabel" destination="Meu-0k-sGT" id="rZs-fA-ObA"/>
+                <outlet property="personNameLabel" destination="t6H-so-6x4" id="fdn-F1-aMJ"/>
+            </connections>
+            <point key="canvasLocation" x="145.6521739130435" y="194.86607142857142"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
